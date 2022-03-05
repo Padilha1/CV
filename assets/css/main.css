@@ -3,6 +3,9 @@
 @import url(./header&menu.css);
 @import url(./home.css);
 @import url(./social&profile.css);
+@import url(./certif&Lang&Inter.css);
+@import url(./mediaQuerie.css);
+@import url(./ButtonTheme&PDF.css);
 
 
 /* Fonts */
@@ -18,6 +21,11 @@
     --container-color:#FAFAFA;
     --container-light:#F0EFEF;
     --body-color:#FCFCFC;
+    --purple-light:#9085D5;
+    --purple-medium:#6D08AF;
+    --purple-strong:#4839A7;
+    --pearly:#A4659D;
+    --violet:#F94E9B;
     /* Font and Typography */
     --body-font: 'Poppins', sans-serif;
     --h1-size: 1.5rem;
@@ -52,6 +60,81 @@ html{
 }
 
 /* Classes modified to reduce size and print A4 */
+.scale-cv .change-theme,
+.scale-cv .generate-pdf{
+    display: none;
+}
+
+.scale-cv .bd-container{
+    max-width: 795px;
+}
+
+.scale-cv .section{
+    padding: 1.5rem 0.80rem;
+}
+.scale-cv .section-title{
+    margin-bottom: .75rem;
+}
+.scale-cv .resume-left,
+.scale-cv .resume-right{
+    padding:0 1rem;
+}
+.scale-cv .home_img{
+    width: 90px;
+    height: 120px;
+}
+
+.scale-cv .home_container{
+    gap: 1.5rem;
+}
+.scale-cv .home_data{
+    gap: .25rem;
+}
+.scale-cv .home_address,
+.scale-cv .social-container{
+    gap: .75rem;
+}
+.scale-cv .home_icon,
+.scale-cv .social-icon,
+.scale-cv .interests-icon{
+    font-size: 1rem;
+}
+
+.scale-cv .education-container,
+.scale-cv .experience-container,
+.scale-cv .certificate-container{
+    gap: .8rem;
+}
+.scale-cv .education-time,
+.scale-cv .experience-time{
+    padding-right: .5rem;
+}
+
+.scale-cv .education-rounder,
+.scale-cv .experience-rounder{
+    width: 11px;
+    height: 11px;
+    margin-top: .22rem;
+}
+
+.scale-cv .education-line,
+.scale-cv .experience-line{
+    width: 1px;
+    height: 110%;
+    transform: translate(5px, 0);
+}
+.scale-cv .education-data,
+.scale-cv .experience-data{
+    gap: .25rem;
+}
+
+.scale-cv .skills-name{
+    margin-bottom: var(--mb-1);
+}
+.scale-cv .interests-container{
+    column-gap: 2.5rem;
+}
+
 body{
     margin: 0 0 var(--header-height) 0;
     padding: 0;
@@ -84,7 +167,7 @@ img{
 
 /* Classes */
 .section{
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .section-title{

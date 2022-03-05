@@ -1,0 +1,72 @@
+@import url(./main.css);
+
+
+/* Small devices, menu two collumns */
+@media screen and (max-width: 320px){
+    .nav-list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem .5rem;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .generates-pdf {
+        display: none;
+    }
+}
+
+/* Classes modified for Large Screen size */
+
+@media screen and (min-width:968px) {
+    body{
+        margin: 4rem 0;
+    }
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .l-header,
+    .scrolltop{
+        display: none;
+    }
+
+    .resume{
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 8px rgba(13,12,12,.15);
+    }
+    .resume-left{
+        background-color: var(--container-color);
+    }
+    .resume-left,
+    .resume-right{
+        padding: 2rem 0;
+    }
+
+    .generates-pdf{
+        display: inline-block;
+    }
+
+    .section-title, /* WHY IS NOT WORKING ?????? */
+    .profile-description{
+        text-align: initial;
+    }
+    .home-container{
+        gap: 1.5rem;
+    }
+    .home_button-movil{
+        display: none;
+    }
+    .languages-content{
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 2rem;
+    }
+    .interests-container{
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 3rem;
+    }
+
+    
+   
+}

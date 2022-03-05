@@ -1,6 +1,7 @@
+@import url(./main.css);
+
 .home{
     position: relative;
-
 }
 
 
@@ -22,11 +23,12 @@
 }
 
 .home_title{
+    font-family: 'Popins', sans-serif;
     font-size: var(--h1-size);
 }
 .home_profession{
     font-size: var(--normal-size);
-    margin-bottom: var(--mb-1);
+    margin-bottom: .55rem;
 }
 .home_address{
     gap: 1rem;
