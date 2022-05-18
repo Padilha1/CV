@@ -1,0 +1,181 @@
+/* CSS files */
+@import url(./ed&skill&exp.css);
+@import url(./header&menu.css);
+@import url(./home.css);
+@import url(./social&profile.css);
+@import url(./certif&Lang&Inter.css);
+@import url(./mediaQuerie.css);
+@import url(./ButtonTheme&PDF.css);
+
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;900&family=Poppins:wght@500;900&family=Redressed&display=swap');
+
+/* Variables */
+:root{
+    --header-height: 3rem;
+    /* colors */
+    --title:#0B0A0A;
+    --text-color:#403A3A;
+    --text-light:#707070;
+    --container-color:#FAFAFA;
+    --container-light:#F0EFEF;
+    --body-color:#FCFCFC;
+    --purple-light:#9085D5;
+    --purple-medium:#6D08AF;
+    --purple-strong:#4839A7;
+    --pearly:#A4659D;
+    --violet:#F94E9B;
+    /* Font and Typography */
+    --body-font: 'Poppins', sans-serif;
+    --h1-size: 1.5rem;
+    --h2-size: 1.25rem;
+    --h3-size: 1rem;
+    --normal-size: .938rem;
+    --small-size:.875rem;
+    --smaller-size:.813rem;
+
+    /* Font Weight */
+    --font-Red:400;
+    --font-medium:500;
+    --font-bold:900;
+
+    /* Margin */
+    --mb-1:.5rem;
+    --mb-2:1rem;
+    --mb-3:1.5rem;
+
+    /* Z index */
+    --z-tooltip:10;
+    --z-fixed:100;
+}
+
+/* base */
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Classes modified to reduce size and print A4 */
+.scale-cv .change-theme,
+.scale-cv .generate-pdf{
+    display: none;
+}
+
+.scale-cv .bd-container{
+    max-width: 795px;
+}
+
+.scale-cv .section{
+    padding: 1.5rem 0.80rem;
+}
+.scale-cv .section-title{
+    margin-bottom: .75rem;
+}
+.scale-cv .resume-left,
+.scale-cv .resume-right{
+    padding:0 1rem;
+}
+.scale-cv .home_img{
+    width: 90px;
+    height: 120px;
+}
+
+.scale-cv .home_container{
+    gap: 1.5rem;
+}
+.scale-cv .home_data{
+    gap: .25rem;
+}
+.scale-cv .home_address,
+.scale-cv .social-container{
+    gap: .75rem;
+}
+.scale-cv .home_icon,
+.scale-cv .social-icon,
+.scale-cv .interests-icon{
+    font-size: 1rem;
+}
+
+.scale-cv .education-container,
+.scale-cv .experience-container,
+.scale-cv .certificate-container{
+    gap: .8rem;
+}
+.scale-cv .education-time,
+.scale-cv .experience-time{
+    padding-right: .5rem;
+}
+
+.scale-cv .education-rounder,
+.scale-cv .experience-rounder{
+    width: 11px;
+    height: 11px;
+    margin-top: .22rem;
+}
+
+.scale-cv .education-line,
+.scale-cv .experience-line{
+    width: 1px;
+    height: 110%;
+    transform: translate(5px, 0);
+}
+.scale-cv .education-data,
+.scale-cv .experience-data{
+    gap: .25rem;
+}
+
+.scale-cv .skills-name{
+    margin-bottom: var(--mb-1);
+}
+.scale-cv .interests-container{
+    column-gap: 2.5rem;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,ul,p{
+    margin: 0;
+}
+h1,h2,h3{
+    color: var(--title);
+    font-weight: var(--font-medium);
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Classes */
+.section{
+    padding: 1rem;
+}
+
+.section-title{
+    font-size: var(--h2-size);
+    color: var(--title);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}

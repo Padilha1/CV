@@ -1,0 +1,82 @@
+/* Main css */
+@import url(./main.css);
+
+/* ================== */
+/*    Certificate     */
+/* ================== */
+.certificate-title{
+    font-size: var(--h3-size);
+    margin-bottom: var(--mb-1);
+}
+
+
+/* ================== */
+/*     Languages      */
+/* ================== */
+.languages-content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+
+.languages-name{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-3);
+}
+
+.languages-circle{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    margin-right: .75rem;
+}
+
+/* ================== */
+/*     Interests      */
+/* ================== */
+
+.interests-container{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: var(--mb-2);
+}
+
+.interests-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interests-icon{
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: .25rem;
+}
+
+/*  SCROLL TOP */
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: var(--container-color);
+    z-index: var(--z-tooltip);
+    border-radius: .4rem;
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop-icon{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.show-scroll{
+    visibility:visible ;
+    bottom: 5rem;
+}
