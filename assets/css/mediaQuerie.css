@@ -7,14 +7,11 @@
         grid-template-columns: repeat(2,1fr);
         gap: 1rem .5rem;
     }
-    
-}
-@media screen and (min-width:320px) {
-    .generates-pdf {
+    .generates-pdf{
         display: none;
     }
+    
 }
-
 
 /* Classes modified for Large Screen size */
 
@@ -45,15 +42,11 @@
         padding: 2rem 0;
     }
 
-    .generates-pdf{
-        display: inline-block;
+    .section-title /* WHY IS NOT WORKING ?????? */
+    {
+        text-align: left;
     }
-
-    .section-title, /* WHY IS NOT WORKING ?????? */
-    .profile-description{
-        text-align: initial;
-    }
-    .home-container{
+    .home_container{
         gap: 1.5rem;
     }
     .home_button-movil{
