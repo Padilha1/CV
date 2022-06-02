@@ -26,7 +26,7 @@ body.dark-theme{
 /* PDF BUTTON */
 
 .generate-pdf {
-    display:none;
+    display:inline;
     position: absolute;
     top: 2.2rem;
     left: 2rem;
