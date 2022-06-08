@@ -53,6 +53,16 @@
     font-size: var(--smaller-size);
 }
 
+.experience-company{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 5em;
+    padding-left: 1em;
+}
+
 /* =================== */
 /*       Skills     */
 /* =================== */
